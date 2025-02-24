@@ -1,0 +1,34 @@
+/*导航栏*/
+/* 导航栏容器 */
+.tabs {
+	position: relative;
+	display: flex;
+	overflow-x: scroll;
+	white-space: nowrap;
+	height: 80rpx; /* 新增固定高度 */
+	line-height: 80rpx; /* 保持文字垂直居中 */
+  }
+  
+  /* 右侧渐变效果 */
+  .tabs::after {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0; /* 保持与容器同高 */
+	width: 80rpx;
+	background: linear-gradient(to left, #79c3ff 0%, rgba(11, 131, 240, 0) 100%);
+	pointer-events: none;
+  }
+  
+  /* 原有tab样式 */
+  .tabs .tab {
+	flex: none; /* 改为不可伸缩 */
+	padding: 0 20rpx;
+	font-size: 28rpx;
+	color: #000;
+	height: 100%; /* 继承容器高度 */
+	display: inline-flex;
+	align-items: center; /* 垂直居中 */
+	justify-content: center; /* 水平居中 */
+  }
