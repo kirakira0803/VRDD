@@ -42,7 +42,7 @@ module.exports = { //dazi
 		{ id: 3, title: '游戏' },
 		{ id: 4, title: '运动' },
 		{ id: 5, title: '逛图' }, 
-		{ id: 7, title: '交友' },
+		{ id: 7, title: '招募' },
 		{ id: 8, title: '聊天' },
 		{ id: 9, title: '交易' }, 
 		{ id: 10, title: '看剧' }, 
