@@ -75,7 +75,7 @@ class PassportBiz extends BaseBiz {
 		let content = '';
 		if (status == 0) content = '您的注册正在审核中，暂时无法使用此功能！';
 		else if (status == 8) content = '您的注册审核未通过，暂时无法使用此功能；请在个人中心修改资料，再次提交审核！';
-		else if (status == 9) content = '您的账号已经禁用, 无法使用此功能！';
+		else if (status == 9) content = '因发布违规内容，您的账号已经禁用, 无法使用此功能！';
 		if (method == 'cancel') {
 			wx.showModal({
 				title: '温馨提示',
